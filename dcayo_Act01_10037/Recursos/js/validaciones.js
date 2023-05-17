@@ -9,7 +9,7 @@ function emailValido() {
 	var valor = document.getElementById("email").value;
 	var vlce = false;
 	if (!expresion.email.test(valor)){
-		alert('Direccion de Correo No valida...!!!');
+		alert('Direccion de Correo No valida!!!');
 		vlce = false;
 	}
 	else{
@@ -25,7 +25,7 @@ function telefonoValido(){
 	if(valor.length == 10 && !isNaN(valor)){
 		vltl = true;
 	}else{
-		alert('El Numero de telefono ingresado es Incorrecto');
+		alert('Error! Ingrese un telefono valido');
 	}
 	return vltl;
 }
